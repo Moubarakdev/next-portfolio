@@ -19,7 +19,13 @@ export default function Home() {
         <Layout className="pt-0">
           <div className="flex w-full items-start justify-between">
             <div className="w-1/2">
-              <Image src={profilePic} alt="MBKDEV" className="h-auto w-full" />
+              <Image
+                src={profilePic}
+                alt="MBKDEV"
+                className="h-auto w-full"
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+              />
             </div>
             <div className="flex w-1/2 flex-col items-center self-center">
               <AnimatedText

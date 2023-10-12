@@ -45,6 +45,8 @@ const MovingImg = ({ title, img, link }) => {
         src={img}
         alt={title}
         className="absolute z-10 hidden h-auto w-96 rounded-lg"
+        priority
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
       />
     </Link>
   );
@@ -76,7 +78,13 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
           target="_blank"
           className="inline-block w-full cursor-pointer overflow-hidden rounded-lg"
         >
-          <FramerImage src={img} alt={title} className="h-auto w-full" />
+          <FramerImage
+            src={img}
+            alt={title}
+            className="h-auto w-full"
+            priority
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+          />
         </Link>
         <Link href={link} target="_blank">
           <h2 className="capitalized my-2 text-2xl font-bold hover:underline">

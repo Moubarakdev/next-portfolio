@@ -74,6 +74,8 @@ const about = () => {
                 src={profilePic}
                 alt="MBKDEV"
                 className="h-auto w-full rounded-2xl"
+                priority
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
             <div className="col-span-2 flex flex-col items-end justify-between">
